@@ -1,0 +1,54 @@
+INFO  Logfile  - TC_001_Login : Test Starting
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #Email]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #next]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #Passwd]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #signIn]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: .//*[contains(text(),'COMPOSE')]]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //a[contains(@href,'SignOutOptions')]]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //a[contains(text(),'Sign out')]]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #rsi\-card]do exist on the page
+INFO  Logfile  - TC_001_Login : Test Passed
+INFO  Logfile  - TC_002_SendAMailAndVerify : Test Starting
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #account\-chooser\-link]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #account\-chooser\-add\-account]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #Email]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #next]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #Passwd]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #signIn]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: .//*[contains(text(),'COMPOSE')]]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: .//*[contains(text(),'COMPOSE')]]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: *[name='to']]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: *[name='to']]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //*[@name='subjectbox']]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //*[@name='subjectbox']]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //*[@aria-label='Message Body' and contains(@class,'editable')]]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //*[@aria-label='Message Body' and contains(@class,'editable')]]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //*[@aria-label='Send ?(Ctrl-Enter)?']]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //*[contains(text(),'Your message has been sent')]]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //a[contains(@href,'SignOutOptions')]]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //a[contains(text(),'Sign out')]]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #rsi\-card]do exist on the page
+INFO  Logfile  - TC_002_SendAMailAndVerify : Test Passed
+INFO  Logfile  - TC_003_verifyReceivedMail : Test Starting
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #account\-chooser\-link]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #account\-chooser\-add\-account]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #Email]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #next]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #Passwd]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #signIn]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: .//*[contains(text(),'COMPOSE')]]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //div[@role='checkbox']]do exist on the page
+INFO  Logfile  - TC_003_verifyReceivedMail : Test Passed
+INFO  Logfile  - TC_004_DeleteMail : Test Starting
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //div[@act='10']]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //a[contains(@href,'SignOutOptions')]]do exist on the page
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> xpath: //a[contains(text(),'Sign out')]]do exist on the page
+INFO  Logfile  - Proxy element for: DefaultElementLocator 'By.id: rsi-card'doesn't exist on the page
+INFO  Logfile  - org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: rsi-card'
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'SYS141', ip: '192.168.5.83', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.MarionetteDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20161019084923, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=5052, browserVersion=49.0.2, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 3801a9da-bc6b-4029-b63c-47888affb49d
+INFO  Logfile  - [[MarionetteDriver: firefox on XP (3801a9da-bc6b-4029-b63c-47888affb49d)] -> css selector: #account\-chooser\-add\-account]do exist on the page
+INFO  Logfile  - TC_004_DeleteMail : Test Passed

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="Browser" value="InternerExplorer"/>
+  <test name="Firefox">
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="testcases.TestSuiteOne"/>
+    </classes>
+  </test> <!-- Firefox -->
+  <test name="Chrome">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="testcases.TestSuiteOne"/>
+    </classes>
+  </test> <!-- Chrome -->
+  <test name="InternerExplorer">
+    <parameter name="Browser" value="InternerExplorer"/>
+    <classes>
+      <class name="testcases.TestSuiteOne"/>
+    </classes>
+  </test> <!-- InternerExplorer -->
+  <test name="Firefox(failed)">
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="testcases.TestSuiteOne">
+        <methods>
+          <include name="SetUp"/>
+          <include name="SetUp"/>
+          <include name="SetUp"/>
+          <include name="quitDriver"/>
+          <include name="quitDriver"/>
+          <include name="quitDriver"/>
+          <include name="TC_004_DeleteMail"/>
+          <include name="initiate"/>
+          <include name="initiate"/>
+          <include name="initiate"/>
+        </methods>
+      </class> <!-- testcases.TestSuiteOne -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

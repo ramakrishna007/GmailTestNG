@@ -1,0 +1,94 @@
+[TestNG] Running:
+  D:\workspace\GmailTestNG\testng.xml
+
+<<------------------------------->>
+Suite : Suite Starting...
+<<------------------------------->>
+<<------------------------------->>
+Test : Method called
+<<------------------------------->>
+<<------------------------------->>
+TC_002_SendAMailAndVerify : Test Starting
+<<------------------------------->>
+15:43:25:199 >> Loading HP UFT Java Support (version 12.0.0.0) (SUN 1.8.0_102)
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: #Email]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: #next]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: #Passwd]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: #signIn]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: .//*[contains(text(),'COMPOSE')]]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: .//*[contains(text(),'COMPOSE')]]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: *[name='to']]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: *[name='to']]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: //*[@name='subjectbox']]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: //*[@name='subjectbox']]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: //*[@aria-label='Message Body' and contains(@class,'editable')]]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: //*[@aria-label='Message Body' and contains(@class,'editable')]]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: //*[@aria-label='Send ?(Ctrl-Enter)?']]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: //*[contains(text(),'Your message has been sent')]]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: //a[contains(@href,'SignOutOptions')]]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: //a[contains(text(),'Sign out')]]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: #rsi\-card]do exist on the page
+<<------------------------------->>
+TC_002_SendAMailAndVerify : Test Passed
+<<------------------------------->>
+<<------------------------------->>
+TC_003_verifyReceivedMail : Test Starting
+<<------------------------------->>
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: #account\-chooser\-link]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: #account\-chooser\-add\-account]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: #Email]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: #next]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: #Passwd]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: #signIn]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: .//*[contains(text(),'COMPOSE')]]do exist on the page
+nrknrk1992@gmail.com
+Selenium Test Mail
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: //div[@role='link']//span[1]]do exist on the page
+Hello
+This is Selenium Test Mail
+Hello 
+This is Selenium Test Mail
+false
+<<------------------------------->>
+TC_003_verifyReceivedMail : Test Passed
+<<------------------------------->>
+<<------------------------------->>
+TC_004_DeleteMail : Test Starting
+<<------------------------------->>
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: //a[contains(@href,'SignOutOptions')]]do exist on the page
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> xpath: //a[contains(text(),'Sign out')]]do exist on the page
+Proxy element for: DefaultElementLocator 'By.id: rsi-card'doesn't exist on the page
+org.openqa.selenium.NoSuchElementException: Unable to locate element: #rsi\-card (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'SYS141', ip: '192.168.5.83', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.MarionetteDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=5888, browserVersion=49.0.1, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 90372974-687d-4974-81c4-7f08e922df02
+*** Element info: {Using=css selector, value=#rsi\-card}
+[[MarionetteDriver: firefox on XP (90372974-687d-4974-81c4-7f08e922df02)] -> css selector: #account\-chooser\-add\-account]do exist on the page
+<<------------------------------->>
+TC_004_DeleteMail : Test Passed
+<<------------------------------->>
+<<------------------------------->>
+Test :Method finished
+<<------------------------------->>
+<<------------------------------->>
+Suite : Suite Finished
+<<------------------------------->>
+
+===============================================
+Suite
+Total tests run: 3, Failures: 0, Skips: 0
+===============================================
+
+[TestNG] Running:
+  D:\workspace\GmailTestNG\testng.xml
+
+<<------------------------------->>
+Suite : Suite Starting...
+<<------------------------------->>
+<<------------------------------->>
+Test : Method called
+<<------------------------------->>
