@@ -28,20 +28,20 @@ public class TestSuiteOne extends Baseclass implements TestDataConstants{
 	Logfile logger;
 	BasicUtilities utilities;
 	
-//	@Parameters({"Browser"})
-//	@BeforeTest
-//	public void SetUp(String Browser){
-////		eyes = new Eyes();
-//		System.out.println(Browser);
-//		driver = getDriver(Browser);	
-////		eyes.setApiKey("VM3w101C103Ki5hJtKdd36UM9sMSkCvxkoaObjkIFFcyt9I110");
-////		eyes.checkWindow("Driver");
-//	}
-	
+	@Parameters({"Browser"})
 	@BeforeTest
-	public void SetUp(){
-		driver = getDriver("Firefox");
+	public void SetUp(String Browser){
+//		eyes = new Eyes();
+		System.out.println(Browser);
+		driver = getDriver(Browser);	
+//		eyes.setApiKey("VM3w101C103Ki5hJtKdd36UM9sMSkCvxkoaObjkIFFcyt9I110");
+//		eyes.checkWindow("Driver");
 	}
+	
+//	@BeforeTest
+//	public void SetUp(){
+//		driver = getDriver("Firefox");
+//	}
 	
 	@AfterTest
 	public void quitDriver(){
