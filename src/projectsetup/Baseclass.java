@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.MarionetteDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -24,7 +23,7 @@ public class Baseclass {
 		switch(Browser){
 			case "Firefox"  : 
 				System.setProperty("webdriver.gecko.driver", project_location+"/Lib/Drivers/geckodriver.exe");
-				driver = new MarionetteDriver(); 
+				driver = new FirefoxDriver(); 
 				driver.manage().window().maximize();
 //				driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 				break;
@@ -37,7 +36,7 @@ public class Baseclass {
 				break;
 				
 			case "InternerExplorer" :
-				System.setProperty("webdriver.ie.driver", project_location+"/Lib/Drivers/IEDriverServer32.exe");
+				System.setProperty("webdriver.ie.driver", project_location+"/Lib/Drivers/IEDriverServer.exe");
 				driver = new InternetExplorerDriver(); 
 				driver.manage().window().maximize();
 //				driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -50,6 +49,7 @@ public class Baseclass {
 				e.printStackTrace();
 			}
 		}
+		driver.manage().deleteAllCookies();
 		return driver;
 	}
 	

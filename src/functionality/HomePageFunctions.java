@@ -74,7 +74,7 @@ public class HomePageFunctions extends SafeActionsClass implements TestDataConst
 //		Assert.assertTrue(lp.Txt_SigninStatus.getText().equalsIgnoreCase("Signed out"));
 //		System.out.println(utilities.elementExists(lp.WebEle_RsiCard));
 //		System.out.println(utilities.elementExists(lp.Lnk_AddAccount));
-		Assert.assertTrue(utilities.elementExists(lp.WebEle_RsiCard) || utilities.elementExists(lp.Lnk_AddAccount),"LogOut Unsuccessful");
+		Assert.assertTrue(utilities.elementExists(lp.WebEle_InitialView) || utilities.elementExists(lp.Lnk_UseAccount),"LogOut Unsuccessful");
 	}
 	
 	public void openEmail(String from,String subject){

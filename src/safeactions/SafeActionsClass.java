@@ -34,6 +34,8 @@ public class SafeActionsClass {
 	}
 	
 	public void safeClick(WebElement element){
-		utilities.clickElement(element);
+		if(utilities.elementExists(element)){
+			utilities.clickElement(element);
+		}
 	}
 }

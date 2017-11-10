@@ -4,7 +4,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.testng.IRetryAnalyzer;
@@ -19,7 +18,7 @@ import utilities.BasicUtilities;
 
 public class Results implements ITestListener,ISuiteListener,IRetryAnalyzer	{
 	int count = 0;
-	int maxcount = 0;
+	int maxcount = 3;
 	FileWriter filer = null;
 	BufferedWriter file;
 	String suitename;
@@ -98,11 +97,11 @@ public class Results implements ITestListener,ISuiteListener,IRetryAnalyzer	{
 	 
 	
 	private void createDirectories() {
-		new File(project_location+"/Reports").delete();
+//		new File(project_location+"/Reports").delete();
 		new File(project_location+"/Reports").mkdir();
-		new File(project_location+"/Reports/Screenshots/"+Utilities.getDate()).mkdir();
+		new File(project_location+"/Reports/Screenshots/"+Utilities.getDate()).mkdirs();
 //		new File(project_location+"/Reports/Recordings").mkdir();
-		new File(project_location+"/Reports/Recordings/"+Utilities.getDate()).mkdir();
+		new File(project_location+"/Reports/Recordings/"+Utilities.getDate()).mkdirs();
 	}
 
 	@Override
@@ -215,7 +214,7 @@ public class Results implements ITestListener,ISuiteListener,IRetryAnalyzer	{
 		res = "<tr><Td align=left  VALIGN=middle>" +result.getMethod().getMethodName()+ "</Td>"+
 				"<Td align=center  Valign=middle class="+status+">"+status +
 	      "<Td align=center >" + new Date()+ "</td>" +
-	      "<Td align=center  VALIGN=middle><A HREF = \\"+project_location+"/Reports/Screenshots/"+result.getMethod().getMethodName()+".png"+" class = canv>VIEW SCREENSHOT</A></td></tr>";}
+	      "<Td align=center  VALIGN=middle><A HREF = \\"+project_location+"/Reports/Screenshots/"+Utilities.getDate()+result.getMethod().getMethodName()+".png"+" class = canv>VIEW SCREENSHOT</A></td></tr>";}
 		else if (status.equals("PASS")){
 			res = "<tr><Td align=left  VALIGN=middle>" +result.getMethod().getMethodName()+ "</Td>"+
 					"<Td align=center  Valign=middle class="+status+">"+status +

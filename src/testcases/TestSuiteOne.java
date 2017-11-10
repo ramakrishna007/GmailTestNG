@@ -1,12 +1,7 @@
 package testcases;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import constants.TestDataConstants;
 import functionality.ComposeMailFunctions;
@@ -30,7 +25,7 @@ public class TestSuiteOne extends Baseclass implements TestDataConstants{
 	
 	@Parameters({"Browser"})
 	@BeforeTest
-	public void SetUp(String Browser){
+	public void SetUp(@Optional("Chrome") String Browser){
 //		eyes = new Eyes();
 		System.out.println(Browser);
 		driver = getDriver(Browser);	
@@ -50,7 +45,6 @@ public class TestSuiteOne extends Baseclass implements TestDataConstants{
 	
 	@BeforeClass
 	public void initiate(){
-		
 		hpf = new HomePageFunctions(driver);
 		lpf = new LoginPageFunctions(driver);
 		cmpf = new ComposeMailFunctions(driver);

@@ -1,8 +1,8 @@
 package functionality;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
+
 import constants.TestDataConstants;
 import pageobjects.HomePage;
 import pageobjects.LoginPage;
@@ -23,7 +23,7 @@ public class LoginPageFunctions extends SafeActionsClass implements TestDataCons
 	public LoginPageFunctions(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
+//		PageFactory.initElements(driver, this);
 		lp = new LoginPage(driver);
 		hp = new HomePage(driver);
 		logger = new Logfile(driver);
@@ -52,11 +52,11 @@ public class LoginPageFunctions extends SafeActionsClass implements TestDataCons
 	}
 	
 	public void clickSignInWithDifferentAccount(){
-		safeClick(lp.Lnk_DifferentAccount);
+		safeClick(lp.DD_SwitchAccount);
 	}
 	
 	public void clickAddAccount(){
-		safeClick(lp.Lnk_AddAccount);
+		safeClick(lp.Lnk_UseAccount);
 	}
 	
 	
@@ -70,19 +70,23 @@ public class LoginPageFunctions extends SafeActionsClass implements TestDataCons
 
 	public void login(String Username,String Password){
 		navigateToURL(BaseURL);
-//		if (utilities.elementExists(lp.Lnk_Gmail)){
-//			utilities.clickElement(lp.Lnk_Gmail);
-//		}
-		if (utilities.elementVisible(lp.Txt_Email)){
+		if (utilities.elementExists(lp.Lnk_Gmail)){
+			utilities.clickElement(lp.Lnk_Gmail);
+		}
+		if (utilities.elementVisible(lp.DD_SwitchAccount)){
 			clickSignInWithDifferentAccount();
 			clickAddAccount();
-		}else if(utilities.elementVisible(lp.WebEle_ChooseAccount)){
+		}else if(utilities.elementVisible(lp.Lnk_UseAccount)){
+			clickAddAccount();
 			clickAddAccount();
 		}
 		setUsername(Username);
 		clickNext();
 		setPassword(Password);
 		clickSignin();
+		if (utilities.elementExists(lp.Btn_DoneSignIn)){
+			utilities.clickElement(lp.Btn_DoneSignIn);
+		}
 		assertion.assertTrue(utilities.elementExists(hp.Btn_Compose), "Login is NOT successful");
 	}
 }

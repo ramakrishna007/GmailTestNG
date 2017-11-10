@@ -1,18 +1,17 @@
 package testcases;
 
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class testclass {
 	@Test
 	public static void mains() throws IOException {
-		WebDriver driver = null;
+		WebDriver driver;
 //		ChromeOptions options = new ChromeOptions();
-		System.setProperty("webdriver.chrome.driver", "../Gmail/Lib/Drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:/RK/RamaKrishna/FW/GmailTestNG-master/Lib/Drivers/chromedriver.exe");
 //
 //		DesiredCapabilities cap= DesiredCapabilities.chrome();
 //
@@ -26,6 +25,14 @@ public class testclass {
 //		driver = new ChromeDriver();
 ////		
 ////		
+		String test = "tesitn "
+				+ "ddfdfdfndfd"
+				+ "fnasdf"
+				+ "adfndf"
+				+ "fdfd;fmf"
+				+ "sdf.df";
+		System.out.println(test);
+		
 ////		driver.get("http://www.google.com");
 //		
 //		File file = new File(System.getProperty("user.dir").replace("\\", "/")+"/../");
@@ -42,9 +49,11 @@ public class testclass {
 		
 //		System.out.println(Calendar.getInstance().);
 		
-		
-		SimpleDateFormat df = new SimpleDateFormat("dd-MM-yy");
-		Date date = new Date();
-		System.out.println(df.format(date));
+//		
+//		SimpleDateFormat df = new SimpleDateFormat("dd-MM-yy");
+//		Date date = new Date();
+//		System.out.println(df.format(date));
+		driver = new ChromeDriver();
+		driver.get("http://www.gmail.com");
 	}
 }
