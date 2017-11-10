@@ -1,3 +1,5 @@
-*.html
-*.png
-*.mov
+**.class
+**.html
+**.png
+**.mov
+*.iml
